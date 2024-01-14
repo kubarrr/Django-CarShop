@@ -1,0 +1,67 @@
+h2, p {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+button, input[type='submit'] {
+  display: block;
+  width: 90%;
+  padding: 10px;
+  margin: 10px auto;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+a {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  color: #007bff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+input#id_password, input#id_password1, input#id_password2, input#id_username, input#id_email, input#id_new_password1,  input#id_new_password2{
+  width: 90%;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+
+form label {
+  display: block;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+}
+
+.error{
+    color: red;
+}
+
+form .sign button[type='submit']{
+    width: 100%;
+    margin: 10px auto;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+}

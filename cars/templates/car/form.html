@@ -1,0 +1,62 @@
+{% extends 'shop/base.html' %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block content %}
+    <h1>{{ title }}</h1>
+
+    <form method="post" action="." enctype="multipart/form-data" class="form_add">
+        {% csrf_token %}
+
+        <table>
+            <tr>
+                <td><label for="id_category" id="label_category">Category:</label></td>
+                <td>{{ form.category }}</td>
+            </tr>
+            <tr>
+                <td><label for="id_name" id="label_name">Name:</label></td>
+                <td>{{ form.name }}</td>
+            </tr>
+            <tr>
+                <td><label for="id_brand" id="label_brand">Brand:</label></td>
+                <td>{{ form.brand }}</td>
+            </tr>
+            <tr>
+                <td><label for="id_transmission" id="label_transmission">Transmission:</label></td>
+                <td>{{ form.transmission }}</td>
+            </tr>
+            <tr>
+                <td><label for="id_price" id="label_price">Price:</label></td>
+                <td>{{ form.price }}</td>
+            </tr>
+            <tr>
+                <td><label for="id_description" id="label_description">Description:</label></td>
+                <td>{{ form.description }}</td>
+            </tr>
+            <tr>
+                <td><label for="id_image">Image:</label></td>
+                <td>{{ form.image }}</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="submit"  id="action-button" class="submit-button">Add new car</button>
+                </td>
+            </tr>
+        </table>
+
+        {% if form.errors %}
+            <div class="error-message">
+                <p> Please correct the following errors:</p>
+                <ul>
+                    {% for field, errors in form.errors.items %}
+                        {% for error in errors %}
+                            <li class="error">{{ error }}</li>
+                        {% endfor %}
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
+    </form>
+{% endblock %}

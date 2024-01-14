@@ -1,0 +1,78 @@
+.cl_menu h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 40px;
+}
+
+.cl_menu h2{
+    font-size: 25px;
+}
+
+.cl_menu h3{
+    font-size: 20px;
+}
+
+.cl_menu p{
+    font-size: 20px;
+}
+
+
+.cl_menu_cat{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+
+.category_table {
+    width: 100%;
+    border: solid #1F4895;
+}
+
+
+.category_table td {
+    vertical-align: top;
+}
+
+.cl_menu a{
+    text-decoration: none;
+    color: #012464
+}
+
+.category_table a:hover, #cl_men_ser_h1:hover{
+    text-decoration: underline;
+}
+
+
+.cars_table {
+    width: 100%;
+    border-collapse: collapse;
+    border: solid #1F4895;
+    margin-bottom: 60px;
+    margin-top: 40px;
+}
+
+.cars_table td, tr {
+    vertical-align: top;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: solid #1F4895;
+}
+
+
+
+.cl_menu_img{
+    height: 300px;
+    width: 500px;
+}
+.cl_menu_img_containter{
+    padding: 10px;
+
+}
+
+.car_details_container{
+    vertical-align: top;
+}

@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #012464
+}
+
+
+.cl_item {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.cl_item a {
+    color: #1F4895;
+    text-decoration: none;
+}
+
+
+.cl_link {
+    margin-top: 10px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #1F4895;
+}
+.cl_link_item, .cl_search_item, .cl_signing {
+    margin-left: 15px;
+    color: #1F4895;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.cl_signing {
+    margin-left: 20px;
+    padding: 4px 6px;
+    border: 1px solid #1F4895;
+    border-radius: 4px;
+}
+
+.cl_foot {
+    margin-top: auto;
+    width: 100%;
+    background-color: #1F4895;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.cl_info_list a {
+    margin-top: auto;
+    width: 100%;
+    background-color: #1F4895;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.cl_foot_div p {
+    font-size: 25px;
+    margin: 5px;
+}
+
+.cl_info_list {
+    list-style: none;
+    padding: 0;
+}
+
+.cl_info_list li {
+    margin-bottom: 5px;
+}
+
+.cl_info h4{
+    margin: 5px;
+}

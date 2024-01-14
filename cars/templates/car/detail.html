@@ -1,0 +1,49 @@
+{% extends 'shop/base.html' %}
+
+{% block title %}
+    {{ car.name }}
+{% endblock %}
+
+{% block content %}
+    <div class="car_det_menu">
+        <h1>{{ car.name }}</h1>
+
+            <div class="car_details_buttons">
+                {% if request.user != car.added_by %}
+                    <a href="{% url 'rents:renting' car.id  %}" class="rent-button">Rent a Car</a>
+                {% endif %}
+                {% if request.user == car.added_by %}
+                    <a href="{% url 'cars:edit' car.id %}" class="edit-button">Edit car</a>
+                    <a href="{% url 'cars:delete' car.id %}" class="delete-button">Delete car</a>
+                {%  elif request.user.is_superuser %}
+                    <a href="{% url 'cars:edit' car.id %}" class="edit-button">Edit car</a>
+                    <a href="{% url 'cars:delete' car.id %}" class="delete-button">Delete car</a>
+                    <strong style="font-size: 20px">Added by:</strong> {{ car.added_by }}
+                {% else %}
+                    <strong style="font-size: 20px">Added by:</strong> {{ car.added_by }}
+                {% endif %}
+            </div>
+    </div>
+        <table class="cars_table">
+            <tr>
+                <td>
+                    <div class="cl_menu_img_containter">
+                        <img src="{{ car.image.url }}" alt="{{ car.name }} Image" class="cl_menu_img">
+                    </div>
+                </td>
+                <td>
+                    <div class="car_details_contatiner">
+                        <h3><strong>Category:</strong> {{ car.category }}</h3>
+                        <h3><strong>Brand:</strong> {{ car.brand }}</h3>
+                        <h3><strong>Transmission:</strong> {{ car.transmission }}</h3>
+                        <h3><strong>Price:</strong> {{ car.price }} $</h3>
+                    </div>
+                </td>
+                <td>
+                    <div class="car_details_contatiner">
+                        <p><strong>Description:</strong> {{ car.description }}</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+{% endblock %}

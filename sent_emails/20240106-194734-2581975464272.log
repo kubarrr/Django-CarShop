@@ -1,0 +1,25 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Subject: Password reset on 127.0.0.1:8000
+From: webmaster@localhost
+To: abcde@op.pl
+Date: Sat, 06 Jan 2024 18:47:34 -0000
+Message-ID: <170456685421.28908.16957651970382408410@przenosny.home>
+
+
+You're receiving this email because you requested a password reset for your user account at 127.0.0.1:8000.
+
+Please go to the following page and choose a new password:
+
+http://127.0.0.1:8000/accounts/reset/MTg/c0ecba-989696fec81057ded334aede80f5e452/
+
+Your username, in case you’ve forgotten: abcde
+
+Thanks for using our site!
+
+The 127.0.0.1:8000 team
+
+
+
+-------------------------------------------------------------------------------

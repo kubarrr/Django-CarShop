@@ -1,0 +1,29 @@
+.confm-button {
+  display: block;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+  background-color: blue;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+h2, p, form {
+    display: flex;
+    justify-content: center;
+}
+
+h2{
+    font-weight: normal;
+    font-size: 35px;
+}
+
+p{
+    font-size: 25px;
+}
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    color: #012464
+}

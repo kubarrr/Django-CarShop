@@ -1,0 +1,57 @@
+{%  extends 'shop/base.html' %}
+
+{% block title%}
+    Welcome
+{% endblock %}
+
+
+{% block content %}
+    <div class="cl_menu">
+        <h1>Cars</h1>
+        <div class="cl_menu_cat">
+            <table class="category_table">
+            <tr>
+                <td>
+                    <h2>Categories:</h2>
+                </td>
+                {% for category in categories %}
+                    <td>
+                        <h2>{{ category.name }}</h2>
+                        <p>{{ category.cars.count }} cars</p>
+                    </td>
+                {% endfor %}
+            </tr>
+            </table>
+        </div>
+
+        <table class="cars_table">
+            {% for car in cars %}
+                <tr>
+                    <td colspan="2">
+                        <a href="{% url 'cars:detail' car.id%}">
+                            <div class="cl_menu_img_containter">
+                                <img src="{{ car.image.url }}" alt="image {{ car.name }}" class="cl_menu_img">
+                            </div>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="{% url 'cars:detail' car.id%}">
+                            <div class="car_details_contatiner">
+                                <h2>Brand: {{ car.brand }}</h2>
+                                <h2>Name: {{ car.name }}</h2>
+                                <h3>Category: {{ car.category }}</h3>
+                                <h3>Price: {{ car.price }} $</h3>
+                            </div>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="{% url 'cars:detail' car.id%}">
+                            <p>{{ car.description }}</p>
+                        </a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </table>
+
+    </div>
+{% endblock %}

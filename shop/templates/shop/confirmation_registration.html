@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'confirming2.css' %}">
+    <title>Confirm</title>
+</head>
+<body>
+    <h2> Hi {{ username }}, Car shop here :)</h2>
+    <p>Your email: {{ email }}</p>
+    <form method="post" action="">
+        {% csrf_token %}
+        <input type="submit" value="Confirm registration" class="confm-button">
+    </form>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{% extends 'registration/loginbase.html' %}
+
+{% block title %}
+    Log in
+{% endblock %}
+{% block content %}
+    <h2>Log In</h2>
+    <form method="post">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit">Log In</button><br>
+      <a href="/accounts/password_reset/">Forgot your password?</a>
+    </form>
+{% endblock %}
