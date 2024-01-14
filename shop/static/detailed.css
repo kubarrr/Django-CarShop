@@ -1,0 +1,33 @@
+.delete-button {
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.rent-button{
+    background-color: #3498db;
+}
+.edit-button{
+    background-color: #09BF0C;
+}
+.delete-button{
+    background-color: #D9250D;
+}
+
+.rent-button:hover {
+    background-color: #2980b9;
+}
+.edit-button{
+    background-color: #3498db;
+}
+.delete-button{
+    background-color: #3498db;
+}
+
+.car_details_buttons{
+    margin-bottom: 30px;
+    margin-right: 15px;
+}

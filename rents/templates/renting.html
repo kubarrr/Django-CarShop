@@ -1,0 +1,45 @@
+{% extends 'shop/base.html' %}
+
+{% block title %}
+    Renting
+{% endblock %}
+
+{% block content %}
+    <h2>Rent message</h2>
+    <p> Car: {{ car }}</p>
+    <p> Owner: {{ owner }}</p>
+    <p>Buyer: {{ buyer}}</p>
+    <form method="post" action="." class="form_add">
+        {% csrf_token %}
+        <table>
+            <tr>
+                <td><label for="id_start">Start:</label></td>
+                <td>{{ form.start}}</td>
+            </tr>
+            <tr>
+                <td><label for="id_end">End:</label></td>
+                <td>{{ form.end}}</td>
+            </tr>
+            <tr>
+                <td><label for="id_message">Message:</label></td>
+                <td>{{ form.message }}</td>
+            </tr>
+            <td colspan="2">
+                <button type="submit" class="submit-button">Send message</button>
+            </td>
+        </table>
+
+{#        {% if form.errors %}#}
+{#            <div class="error-message">#}
+{#                <p> Please correct the following errors:</p>#}
+{#                <ul>#}
+{#                    {% for field, errors in form.errors.items %}#}
+{#                        {% for error in errors %}#}
+{#                            <li class="error">{{ error }}</li>#}
+{#                        {% endfor %}#}
+{#                    {% endfor %}#}
+{#                </ul>#}
+{#            </div>#}
+{#        {% endif %}#}
+    </form>
+{% endblock %}

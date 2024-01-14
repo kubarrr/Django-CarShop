@@ -1,0 +1,10 @@
+{% extends 'registration/loginbase.html' %}
+{% block title %}
+    password_reset_done
+{% endblock %}
+{% block content %}
+    <h2>Check your inbox.</h2>
+    <p> We've already send your message to:</p>
+    <p>{{ email }}</p>
+    <a href="{% url 'shop:index' %}">Back to shop</a>
+{% endblock %}

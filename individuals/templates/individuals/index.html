@@ -1,0 +1,42 @@
+{%  extends 'shop/base.html' %}
+
+{% block title%}
+    My account
+{% endblock %}
+
+
+{% block content %}
+    <div class="cl_menu">
+        <h1>My cars</h1>
+
+        <table class="cars_table">
+            {% for car in cars %}
+                <tr>
+                    <td colspan="2">
+                        <a href="{% url 'cars:detail' car.id%}">
+                            <div class="cl_menu_img_containter">
+                                <img src="{{ car.image.url }}" alt="image {{ car.name }}" class="cl_menu_img">
+                            </div>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="{% url 'cars:detail' car.id%}">
+                            <div class="car_details_contatiner">
+                                <h2>Brand: {{ car.brand }}</h2>
+                                <h2>Name: {{ car.name }}</h2>
+                                <h3>Category: {{ car.category }}</h3>
+                                <h3>Price: {{ car.price }} $</h3>
+                            </div>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="{% url 'cars:detail' car.id%}">
+                            <p>{{ car.description }}</p>
+                        </a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </table>
+
+    </div>
+{% endblock %}

@@ -1,0 +1,30 @@
+
+.fieldWrapper {
+    margin-bottom: 15px;
+}
+
+.fieldWrapper label {
+    display: block;
+    width: 150px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.fieldWrapper input {
+    width: 250px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.error{
+    color: red;
+}
+
+form .sign button[type='submit']{
+    width: 90%;
+    margin: 10px auto;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+}

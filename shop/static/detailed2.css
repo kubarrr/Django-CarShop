@@ -1,0 +1,50 @@
+.rent-button {
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background-color: #3498db;
+    margin-right: 20px;
+}
+
+.edit-button {
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background-color: #09BF0C;
+    margin-right: 20px;
+}
+
+.delete-button {
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background-color: #D9250D;
+    margin-right: 20px;
+}
+
+.rent-button:hover {
+    background-color: #2980b9;
+}
+
+.car_details_buttons{
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-right: 15px;
+}
+
+.car_det_menu{
+    text-align: center;
+}
+
+.car_det_menu h1{
+    matgin-bottom: 40px;
+}

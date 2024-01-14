@@ -1,0 +1,37 @@
+{#{% extends 'shop/base.html' %}#}
+{% extends 'registration/loginbase.html' %}
+
+{% block title %}
+    Sign Up
+{% endblock %}
+
+{% block content %}
+    <h2>Sign Up</h2>
+    <form method="post" action="" id="signup_form">
+        {% csrf_token %}
+            <label id="username" for="id_username">Username:</label>
+            {{ form.username }}
+            <label for="id_email">Email:</label>
+            {{ form.email }}
+            <label for="id_password1">Password:</label>
+            {{ form.password1 }}
+{#        <div class="fieldWrapper">#}
+            <label for="id_password2">Repeat Password:</label>
+            {{ form.password2 }}
+{#        </div>#}
+        {% if form.errors %}
+            <div class="error-message">
+                <p> Please correct the following errors:</p>
+                <ul>
+                    {% for field, errors in form.errors.items %}
+                        {% for error in errors %}
+                            <li class="error">{{ error }}</li>
+                        {% endfor %}
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
+
+        <button type="submit" style="width: 90%; color: white; background: dodgerblue; font-size: 20px">Sign Up</button>
+    </form>
+{% endblock %}

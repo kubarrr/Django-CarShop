@@ -1,0 +1,33 @@
+.cl_menu_img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.cars_table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cars_table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    vertical-align: top;
+}
+
+.car_details {
+    padding-top: 0px;
+    text-align: center;
+}
+
+.car_details h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.car_details p {
+    margin: 0;
+    font-size: 16px;
+}

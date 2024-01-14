@@ -1,0 +1,26 @@
+.cl_to_find {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.cl_search {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+.finding_button {
+    padding: 10px 20px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.finding_button:hover {
+    background-color: #444;
+}

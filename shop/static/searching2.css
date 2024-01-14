@@ -1,0 +1,25 @@
+.cl_to_find {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.cl_search {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #1F4895;
+    margin-right: 10px;
+    font-size: 30px;
+}
+.cl_search::placeholder {
+    color: #B0B1DE;
+}
+.finding_button {
+    padding: 10px;
+    background-color: #1F4895;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 30px;
+}
