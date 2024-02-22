@@ -12,7 +12,8 @@ University Django project "Car rental shop".
 #
 ![image](https://github.com/kubarrr/Django-CarShop/assets/100797029/7265c7b2-162d-4215-b758-a2189885a23d)
 #
-![image](https://github.com/kubarrr/Django-CarShop/assets/100797029/127457da-e5c2-4d5c-82c2-e2758c7ef199)
+![image](https://github.com/kubarrr/Django-CarShop/assets/100797029/2b3df1d9-b156-4d99-a10f-01542573ae7c)
+
 
 
 
