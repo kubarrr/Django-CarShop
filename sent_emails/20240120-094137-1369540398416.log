@@ -1,0 +1,25 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Subject: Password reset on 127.0.0.1:8000
+From: webmaster@localhost
+To: kuba1234@op.pl
+Date: Sat, 20 Jan 2024 08:41:37 -0000
+Message-ID: <170574009792.25152.11119801080732288551@przenosny.home>
+
+
+You're receiving this email because you requested a password reset for your user account at 127.0.0.1:8000.
+
+Please go to the following page and choose a new password:
+
+http://127.0.0.1:8000/accounts/reset/MTU/c13hld-1008a1140ee7fa93338d298898ae04ec/
+
+Your username, in case you’ve forgotten: kuba1234
+
+Thanks for using our site!
+
+The 127.0.0.1:8000 team
+
+
+
+-------------------------------------------------------------------------------

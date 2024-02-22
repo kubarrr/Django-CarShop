@@ -1,0 +1,25 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Subject: Password reset on 127.0.0.1:8000
+From: webmaster@localhost
+To: dcba@op.pl
+Date: Mon, 22 Jan 2024 17:24:26 -0000
+Message-ID: <170594426649.94292.12106227417467541460@przenosny.mini.pw.edu.pl>
+
+
+You're receiving this email because you requested a password reset for your user account at 127.0.0.1:8000.
+
+Please go to the following page and choose a new password:
+
+http://127.0.0.1:8000/accounts/reset/MjY/c17v4q-581e370fff3b170866f1f4ac5f1e3d30/
+
+Your username, in case you’ve forgotten: dcba
+
+Thanks for using our site!
+
+The 127.0.0.1:8000 team
+
+
+
+-------------------------------------------------------------------------------
