@@ -1,5 +1,9 @@
 # Django-CarShop
 University Django project "Car rental shop".
+
+
+The aim of the project was to develop a web application that enables logged users to lend and rent cars. 
+Moreover, admin has superuser privileges for managing the entire database.
 #
 ![image](https://github.com/kubarrr/Django-CarShop/assets/100797029/6acbfd37-46c8-4bba-a0ce-f7b480ea88bb)
 #
